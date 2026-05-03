@@ -37,6 +37,7 @@ Main.BorderSizePixel = 7
 Main.Position = UDim2.new(0.5, 0, 0.5, 0)
 Main.Size = UDim2.new(0.129999995, 0, 0.360000014, 0)
 Main.Draggable = true
+Main.Active = true
 
 ListButton.Name = "ListButton"
 ListButton.Parent = Main
@@ -128,7 +129,7 @@ Burger4.TextStrokeTransparency = 0.000
 Burger4.TextWrapped = true
 
 Burger5.Name = "Burger5"
-Burger3.Parent = Lists
+Burger5.Parent = Lists
 Burger5.BackgroundColor3 = Color3.fromRGB(213, 255, 207)
 Burger5.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Burger5.BorderSizePixel = 3
@@ -165,7 +166,7 @@ local function SendChatMessage(message)
 end
 
 -- Send the chat message
-SendChatMessage("i am a sigma")
+SendChatMessage("a script Made By Build3r")
 
 
 -- this part of da script make da magic woah woahhhhh
