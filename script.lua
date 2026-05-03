@@ -1,12 +1,17 @@
 -- script made by Build3r @I_AmYourBigFather
-
 -- i think this is the first script for this game tho
+-- comment from the creator : "ok"
 
 local player = game.Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")
 
 local TextChatService = game:GetService("TextChatService")
 local StarterGui = game:GetService("StarterGui")
+
+local existingGui = playerGui:FindFirstChild("build3rGui")
+if existingGui then
+	existingGui:Destroy()
+end
 
 local buil3rGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
@@ -16,8 +21,7 @@ local UIListLayout = Instance.new("UIListLayout")
 local Burger1 = Instance.new("TextButton")
 local Burger2 = Instance.new("TextButton")
 
-
-buil3rGui.Name = "buil3rGui"
+buil3rGui.Name = "build3rGui"
 buil3rGui.Parent = playerGui
 buil3rGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 buil3rGui.ResetOnSpawn = false
@@ -29,6 +33,7 @@ Main.BorderColor3 = Color3.fromRGB(59, 80, 56)
 Main.BorderSizePixel = 7
 Main.Position = UDim2.new(0.5, 0, 0.5, 0)
 Main.Size = UDim2.new(0.129999995, 0, 0.360000014, 0)
+Main.Draggable = true
 
 ListButton.Name = "ListButton"
 ListButton.Parent = Main
